@@ -1,0 +1,285 @@
+@font-face{
+font-family: 'Colendra';
+src: url('./font/ColendraBold.woff') format('woff');
+font-weight: lighter;
+font-style:normal;
+}
+
+@font-face {
+font-family: 'Josefin Sans';
+src: url('./font/JosefinSans-Bold.woff') format('woff');
+font-weight: lighter;
+font-style: normal;
+}
+
+body {
+text-align: center;
+justify-content: center;
+background-image: url('./images/dot.png');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+} 
+
+.home {
+background-image: url(./images/home.png);
+min-height: fit-content;
+background-position: center center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+header {
+    padding: 25px;
+    color: white;
+    font-family: 'Josefin Sans';
+    background: rgb(35,43,71);
+}
+
+a {
+    text-decoration: none;
+}
+
+li a {
+    border: white solid 2px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+background-color: white;
+color: rgb(35,43,71)
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    width: auto;
+}
+
+main {
+font-family:'Colendra'
+}
+
+h3 {
+    background: white;
+}
+
+h4 {
+    background: white;
+    font-weight: bolder
+}
+
+button {
+    font-family: 'Colendra';
+    background-color: rgb(35,43,71);
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 40px;
+    width: 359px;
+    border: black solid 2px;
+}
+
+fieldset form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+   
+fieldset form input {
+font-family: 'Colendra';
+font-size: large;
+border: rgb(35,43,71) solid 2px;
+padding: 15px;
+width: 60%;
+margin-top: auto;
+margin-bottom: 30px;
+} 
+
+fieldset form button {
+padding: 15px;
+width: 50%;
+margin-top: auto;
+margin-bottom: 20px;
+}
+
+fieldset form p {
+text-decoration: underline;
+margin-top: 20px;
+margin-bottom: auto;
+}
+
+section {
+border: 2px solid rgb(35,43,71);
+margin: 10px;
+margin-bottom: 40px;
+padding: 25px;
+background: white;
+}
+
+section form {
+ display: flex;
+}
+
+section h4 {
+    font-size: x-large;
+    color: rgb(35,43,71);
+    margin-block-start: auto;
+    margin-block-end: 1em;
+}
+
+.location {
+    color: rgb(237,79,58);
+}
+
+section p {
+    margin-bottom: 20px;
+    font-size: large;
+
+}
+
+section a {
+font-size: large;
+ text-decoration: none; 
+ background: rgb(237,79,58); 
+ border:rgb(35,43,71) solid 2px;
+ color: white;
+ padding: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+textarea {
+    border: rgb(35,43,71) solid 2px;
+}
+
+input[type=submit] {
+    font-family:'Colendra';
+    font-size: larger;
+    color:white;
+    text-align: center;
+    border: black solid 2px;
+    border-radius: 80%;
+    padding: 10px;
+    background-color: rgb(35,43,71);
+}
+
+.list {
+    position: relative;
+    width:350px;
+}
+
+.list ul {
+    position: relative;
+    padding: 0px;
+    margin-top: 5px;
+}
+
+.list ul li {
+    position: relative;
+    list-style: none;
+    margin: 20px;
+    padding: 10px 0px;
+    border: 2px solid rgb(35,43,71);
+    background: white;
+}
+
+.list ul li label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list ul li label input {
+    visibility: hidden;
+    appearance: none;
+}
+
+.list ul li p {
+display: flex;
+font-size: larger;
+font-weight: bolder;
+margin-top: -10px;
+margin-bottom: 0px;
+margin-right: 20px;
+}
+
+.list ul li label p {
+    font-size: larger;
+    position: absolute;
+}
+
+.list ul li label span {
+    position: relative;
+    width: 20px;
+    height: 20px; 
+    border: 1px solid rgb(35,43,71);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ul li label span:before {
+content: '' ;
+position: absolute;
+top: 5px;
+width: 10px;
+height: 5px;
+border-left: 2px solid lightgray;
+border-bottom: 2px solid lightgray;
+transform:rotate(-40deg);
+
+}
+
+.list ul li label input:checked ~ p {
+text-decoration: line-through;
+color: rgb(35,43,71)
+}
+
+.list ul li label input:checked ~ span {
+background: rgb(35,43,71);
+
+}
+
+.gloeilamp {
+    margin-top: 15px;
+    margin-left: 135px;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: black solid 2px;
+    background: rgb(35,43,71);
+    border-radius: 50%;
+    width: 20%;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+    border-radius: 35px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
